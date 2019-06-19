@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=mcp
 EnvironmentFile=/etc/default/roscore
-ExecStart=roslaunch raspicam_node ~/ros_catkin_ws/src/raspicam_node/launch/camerav2_1280x960.launch
+ExecStart=/opt/ros/kinetic/bin/roslaunch raspicam_node ~/ros_catkin_ws/src/raspicam_node/launch/camerav2_1280x960.launch
 Restart=on-abort
 
 [Install]
